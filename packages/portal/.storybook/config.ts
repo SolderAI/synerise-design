@@ -22,7 +22,6 @@ const withDSProvider = (storyFn) => {
     code: 'en_GB',
     ...optionalUserDefinedLocale ? { locale: optionalUserDefinedLocale } : {},
   } as DSProviderProps
-  console.info('props', props)
   return React.createElement(DSProvider, props, storyFn());
 }
 
